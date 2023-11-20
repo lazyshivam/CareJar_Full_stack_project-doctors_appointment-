@@ -11,7 +11,7 @@ const PORT = process.env.PORT||8000;
 
 const app = express();
 app.use(express.json());
-app.use(cors({origin: 'https://carejar071.netlify.app'}));
+app.use(cors({origin: 'https://carejar071.netlify.app/categories'}));
 
 
 
