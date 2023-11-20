@@ -1,8 +1,7 @@
 const express = require('express');
 const Chance = require('chance');
-const cors= require('cors');
-const app = express();
 const path = require('path');
+const cors= require('cors');
 
 require('dotenv').config();
 
@@ -10,8 +9,10 @@ require('dotenv').config();
 
 const PORT = process.env.PORT||8000;
 
+const app = express();
 app.use(express.json());
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: 'http://localhost:3000' })); // Update with your front-end origin
+
 
 
 app.use(express.static(path.join(__dirname, 'dist')));
