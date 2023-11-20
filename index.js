@@ -1,6 +1,6 @@
 const express = require('express');
 const Chance = require('chance');
-const path = require('path');
+// const path = require('path');
 const cors= require('cors');
 
 require('dotenv').config();
@@ -15,12 +15,12 @@ app.use(cors());
 
 
 
-app.use(express.static(path.join(__dirname, 'dist')));
+// app.use(express.static(path.join(__dirname, 'dist')));
 
-// Handle requests to your React app
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-});
+// // Handle requests to your React app
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+// });
 
 // Create a new instance of Chance
 const chance = new Chance();
