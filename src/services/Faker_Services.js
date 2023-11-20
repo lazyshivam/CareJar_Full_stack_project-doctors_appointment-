@@ -1,7 +1,7 @@
 // Need to use the React-specific entry point to import createApi
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-const url='http://localhost:8000';
+const url='https://carejar-5qvg.onrender.com';
 // Define a service using a base URL and expected endpoints
 export const fakerApi = createApi({
   reducerPath: 'fakerApi',
